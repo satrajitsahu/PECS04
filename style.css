@@ -118,12 +118,43 @@ body {
 .task-item {
   display: flex;
   align-items: center;
+  gap: 0.75rem;
   min-height: 80px;
   padding: 1rem 1.1rem;
   border-bottom: 1px solid #e9e3df;
   color: var(--text);
   font-size: 1rem;
   font-weight: 600;
+}
+
+.task-checkbox {
+  width: 1.1rem;
+  height: 1.1rem;
+  accent-color: var(--primary);
+}
+
+.task-item span {
+  flex: 1;
+}
+
+.task-done {
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+.delete-button {
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--primary);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.delete-button:hover,
+.delete-button:focus-visible {
+  color: var(--primary-dark);
 }
 
 .task-item:last-child {
